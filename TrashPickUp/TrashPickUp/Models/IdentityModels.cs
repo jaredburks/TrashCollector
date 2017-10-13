@@ -29,5 +29,8 @@ namespace TrashPickUp.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Worker> Worker { get; set; }
+
     }
 }
