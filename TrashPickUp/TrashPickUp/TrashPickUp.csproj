@@ -211,6 +211,10 @@
     <Compile Include="Migrations\201710131918295_DbSetCustomerAndWorker.Designer.cs">
       <DependentUpon>201710131918295_DbSetCustomerAndWorker.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710161417179_SpecifyZipCode.cs" />
+    <Compile Include="Migrations\201710161417179_SpecifyZipCode.Designer.cs">
+      <DependentUpon>201710161417179_SpecifyZipCode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -306,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710131918295_DbSetCustomerAndWorker.resx">
       <DependentUpon>201710131918295_DbSetCustomerAndWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710161417179_SpecifyZipCode.resx">
+      <DependentUpon>201710161417179_SpecifyZipCode.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

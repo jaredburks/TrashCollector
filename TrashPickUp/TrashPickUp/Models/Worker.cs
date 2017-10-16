@@ -11,5 +11,6 @@ namespace TrashPickUp.Models
         [Key]
         public int ID { get; set; }
         public string Name { get; set; }
+        public string Area { get; set; }//Zip Code of route of customers 
     }
 }
