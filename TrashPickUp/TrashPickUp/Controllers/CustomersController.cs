@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using TrashPickUp.CustomFilter;
 using TrashPickUp.Models;
 
 namespace TrashPickUp.Controllers
@@ -15,6 +16,7 @@ namespace TrashPickUp.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Customers
+        [AuthLog(Roles = "Worker")]
         public ActionResult Index()
         {
             return View(db.Customer.ToList());
