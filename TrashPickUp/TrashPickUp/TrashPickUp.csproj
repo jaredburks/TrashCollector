@@ -215,6 +215,10 @@
     <Compile Include="Migrations\201710161417179_SpecifyZipCode.Designer.cs">
       <DependentUpon>201710161417179_SpecifyZipCode.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710161513195_UpdatedProperties.cs" />
+    <Compile Include="Migrations\201710161513195_UpdatedProperties.Designer.cs">
+      <DependentUpon>201710161513195_UpdatedProperties.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -282,16 +286,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Workers\Create.cshtml" />
-    <Content Include="Views\Workers\Delete.cshtml" />
-    <Content Include="Views\Workers\Details.cshtml" />
-    <Content Include="Views\Workers\Edit.cshtml" />
-    <Content Include="Views\Workers\Index.cshtml" />
     <Content Include="Views\Customers\Create.cshtml" />
     <Content Include="Views\Customers\Delete.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Edit.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Workers\Create.cshtml" />
+    <Content Include="Views\Workers\Delete.cshtml" />
+    <Content Include="Views\Workers\Details.cshtml" />
+    <Content Include="Views\Workers\Edit.cshtml" />
+    <Content Include="Views\Workers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -313,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710161417179_SpecifyZipCode.resx">
       <DependentUpon>201710161417179_SpecifyZipCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710161513195_UpdatedProperties.resx">
+      <DependentUpon>201710161513195_UpdatedProperties.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

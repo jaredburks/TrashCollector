@@ -77,10 +77,10 @@ C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.csprojResolveAssemblyReference.cache
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.dll
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.pdb
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.Initial.resources
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.csproj.GenerateResource.Cache
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.DbSetCustomerAndWorker.resources
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.SpecifyZipCode.resources
+C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.UpdatedProperties.resources
