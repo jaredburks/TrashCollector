@@ -201,6 +201,7 @@
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PickUpController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\WorkersController.cs" />
     <Compile Include="CustomFilter\Filter.cs" />
@@ -234,6 +235,18 @@
     <Compile Include="Migrations\201710161930495_RemovedDateRequirement.cs" />
     <Compile Include="Migrations\201710161930495_RemovedDateRequirement.Designer.cs">
       <DependentUpon>201710161930495_RemovedDateRequirement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710171545203_Adding area to worker.cs" />
+    <Compile Include="Migrations\201710171545203_Adding area to worker.Designer.cs">
+      <DependentUpon>201710171545203_Adding area to worker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710171658400_TestingLinkModelToUser.cs" />
+    <Compile Include="Migrations\201710171658400_TestingLinkModelToUser.Designer.cs">
+      <DependentUpon>201710171658400_TestingLinkModelToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710171909532_update.cs" />
+    <Compile Include="Migrations\201710171909532_update.Designer.cs">
+      <DependentUpon>201710171909532_update.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -318,6 +331,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\PickUp\" />
     <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
@@ -349,6 +363,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710161930495_RemovedDateRequirement.resx">
       <DependentUpon>201710161930495_RemovedDateRequirement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710171545203_Adding area to worker.resx">
+      <DependentUpon>201710171545203_Adding area to worker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710171658400_TestingLinkModelToUser.resx">
+      <DependentUpon>201710171658400_TestingLinkModelToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710171909532_update.resx">
+      <DependentUpon>201710171909532_update.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

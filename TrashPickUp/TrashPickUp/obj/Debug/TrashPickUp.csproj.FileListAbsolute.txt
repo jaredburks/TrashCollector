@@ -88,3 +88,6 @@ C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.AddedRoles.resources
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.AddDate.resources
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.RemovedDateRequirement.resources
+C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.Addingareatoworker.resources
+C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.TestingLinkModelToUser.resources
+C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.update.resources

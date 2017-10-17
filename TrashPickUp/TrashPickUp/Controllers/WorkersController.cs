@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -50,9 +51,10 @@ namespace TrashPickUp.Controllers
         {
             if (ModelState.IsValid)
             {
+                worker.UserID = User.Identity.GetUserId();
                 db.Worker.Add(worker);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", worker);
             }
 
             return View(worker);

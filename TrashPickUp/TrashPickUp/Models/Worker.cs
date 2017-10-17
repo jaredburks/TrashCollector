@@ -12,5 +12,7 @@ namespace TrashPickUp.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public string Area { get; set; }//Zip Code of route of customers 
+        public string UserID { get; set; }//testing link to logged in user
+        public virtual ApplicationUser loggedUser { get; set; }//testing link to logged in user
     }
 }

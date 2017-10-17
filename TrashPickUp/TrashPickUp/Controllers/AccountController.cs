@@ -254,6 +254,7 @@ namespace TrashPickUp.Controllers
                 return View(model);
             }
             var user = await UserManager.FindByNameAsync(model.Email);
+
             if (user == null)
             {
                 // Don't reveal that the user does not exist

@@ -1,25 +1,34 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using TrashPickUp.CustomFilter;
 using TrashPickUp.Models;
+
 
 namespace TrashPickUp.Controllers
 {
     public class CustomersController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+        public ApplicationUser user;
 
         // GET: Customers
         [AuthLog(Roles = "Worker")]
         public ActionResult Index()
         {
-            return View(db.Customer.ToList());
+            //string zipArea = System.Web.HttpContext.Current.User;
+            //return View(db.Customer.Where(x => x.Zip == "53233").ToList());//This works
+            var userId = User.Identity.GetUserId();
+            var worker = db.Worker.Where(m => m.UserID == userId).SingleOrDefault();
+            var customersInZipCode = db.Customer.Where(x => x.Zip == worker.Area).ToList();
+            return View(customersInZipCode);
         }
 
         // GET: Customers/Details/5
