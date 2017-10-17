@@ -48,7 +48,7 @@ namespace TrashPickUp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,Street,City,Zip")] Customer customer)
+        public ActionResult Create( Customer customer)
         {
             if (ModelState.IsValid)
             {
@@ -56,7 +56,6 @@ namespace TrashPickUp.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
             return View(customer);
         }
 
@@ -80,7 +79,7 @@ namespace TrashPickUp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name,Street,City,Zip")] Customer customer)
+        public ActionResult Edit( Customer customer)
         {
             if (ModelState.IsValid)
             {
@@ -105,7 +104,6 @@ namespace TrashPickUp.Controllers
             }
             return View(customer);
         }
-
         // POST: Customers/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -116,7 +114,6 @@ namespace TrashPickUp.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
         protected override void Dispose(bool disposing)
         {
             if (disposing)

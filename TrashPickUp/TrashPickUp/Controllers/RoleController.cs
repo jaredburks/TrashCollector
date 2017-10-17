@@ -16,9 +16,6 @@ namespace TrashPickUp.Controllers
         {
             context = new ApplicationDbContext();
         }
-
-
-
         /// <summary>
         /// Get All Roles
         /// </summary>
@@ -28,7 +25,6 @@ namespace TrashPickUp.Controllers
             var Roles = context.Roles.ToList();
             return View(Roles);
         }
-
         /// <summary>
         /// Create  a New role
         /// </summary>
@@ -38,7 +34,6 @@ namespace TrashPickUp.Controllers
             var Role = new IdentityRole();
             return View(Role);
         }
-
         /// <summary>
         /// Create a New Role
         /// </summary>
@@ -51,7 +46,5 @@ namespace TrashPickUp.Controllers
             context.SaveChanges();
             return RedirectToAction("Index");
         }
-
-
     }
 }
