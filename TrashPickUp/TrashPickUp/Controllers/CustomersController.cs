@@ -27,6 +27,7 @@ namespace TrashPickUp.Controllers
             var worker = db.Worker.Where(m => m.UserID == userId).SingleOrDefault();//Finds worker with matching UserID
             var customersInZipCode = db.Customer.Where(x => x.Zip == worker.Area).ToList();//Finds customer in the same zip code as worker/user
             customersInZipCode = customersInZipCode.Where(x => x.PickUpDay == DateTime.Today.DayOfWeek).ToList();//Finds customers with pickup date that matches with today's date 
+            //TODO: Make sure DateTime.Today isn't within vacation days range
             return View(customersInZipCode);
         }
 

@@ -14,7 +14,8 @@ namespace TrashPickUp.Models
         public string Street { get; set; }
         public string City { get; set; }
         public string Zip { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime NoPickUpStartDate { get; set; }//Start date of when you don't want pickups
+        public DateTime NoPickUpEndDate { get; set; }//End date of when you don't want pickups
         public DayOfWeek PickUpDay { get; set; }
     }
 }
