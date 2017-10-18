@@ -10,11 +10,11 @@ namespace TrashPickUp.Controllers
     public class PickUpController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-        Worker worker;
+
         // GET: PickUp
         public ActionResult Index()
         {
-            return View(db.Customer.Where(x => x.Zip == worker.Area).ToList());
+            return View();
         }
         // GET: PickUp/Details/5
         public ActionResult Details(int id)

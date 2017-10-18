@@ -23,11 +23,9 @@ namespace TrashPickUp.Controllers
         [AuthLog(Roles = "Worker")]
         public ActionResult Index()
         {
-            //string zipArea = System.Web.HttpContext.Current.User;
-            //return View(db.Customer.Where(x => x.Zip == "53233").ToList());//This works
-            var userId = User.Identity.GetUserId();
-            var worker = db.Worker.Where(m => m.UserID == userId).SingleOrDefault();
-            var customersInZipCode = db.Customer.Where(x => x.Zip == worker.Area).ToList();
+            var userId = User.Identity.GetUserId();//Gets current app user's ID
+            var worker = db.Worker.Where(m => m.UserID == userId).SingleOrDefault();//Finds worker with matching UserID
+            var customersInZipCode = db.Customer.Where(x => x.Zip == worker.Area).ToList();//Finds customer in the same zip code as worker/user
             return View(customersInZipCode);
         }
 
