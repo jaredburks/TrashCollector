@@ -51,7 +51,7 @@ namespace TrashPickUp.Controllers
         {
             if (ModelState.IsValid)
             {
-                worker.UserID = User.Identity.GetUserId();
+                worker.UserID = User.Identity.GetUserId();//Assigns created worker to signed in user that created it
                 db.Worker.Add(worker);
                 db.SaveChanges();
                 return RedirectToAction("Index", worker);

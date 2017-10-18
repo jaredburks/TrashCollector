@@ -248,6 +248,10 @@
     <Compile Include="Migrations\201710171909532_update.Designer.cs">
       <DependentUpon>201710171909532_update.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710181640361_TestDayOfWeek.cs" />
+    <Compile Include="Migrations\201710181640361_TestDayOfWeek.Designer.cs">
+      <DependentUpon>201710181640361_TestDayOfWeek.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -372,6 +376,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710171909532_update.resx">
       <DependentUpon>201710171909532_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710181640361_TestDayOfWeek.resx">
+      <DependentUpon>201710181640361_TestDayOfWeek.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

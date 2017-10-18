@@ -15,5 +15,6 @@ namespace TrashPickUp.Models
         public string City { get; set; }
         public string Zip { get; set; }
         public DateTime Date { get; set; }
+        public DayOfWeek PickUpDay { get; set; }
     }
 }
