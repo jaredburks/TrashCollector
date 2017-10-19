@@ -66,19 +66,80 @@
             @Html.DisplayFor(model => model.PickUpDay)
         </dd>
     </dl>
-    <div class="col-sm-6">
-			<center>
-			<h1>Customer's Spot</h1>
-			<iframe
-			  width="500"
-			  height="350"
-			  frameborder="0" style="border:0"
-			  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAq-5Tw-9xDHtBILGFNmNRgTZqKvk4-1Ao&q=devCodeCamp,Milwaukee+WI" allowfullscreen>
-			</iframe>
-			</center>
-		</div>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+        <style>
+            #map {
+                height: 400px;
+                width: 100%;
+            }
+            #floating-panel {
+        position: absolute;
+        z-index: 5;
+        background-color: #fff;
+        border: 1px solid #999;
+        text-align: center;
+      }
+        </style>
+    <div id="floating-panel">
+        <input id="address" type="text" value=Milwaukee>
+        <input id="submit" type="button" value="Geocode">
+    </div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: {lat: -34.397, lng: 150.644}
+        });
+        var geocoder = new google.maps.Geocoder();
+
+        document.getElementById('submit').addEventListener('click', function() {
+          geocodeAddress(geocoder, map);
+        });
+      }
+
+      function geocodeAddress(geocoder, resultsMap) {
+        var address = document.getElementById('address').value;
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            resultsMap.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+              map: resultsMap,
+              position: results[0].geometry.location
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZVALr-fT0-klCyHMKBeSsvG-egHSB1Nc&callback=initMap">
+    </script>
+
 </div>
+<!-- API KEY AIzaSyCZVALr-fT0-klCyHMKBeSsvG-egHSB1Nc-->
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+<!--<h3>Customer's Place</h3>
+        <div id="map"></div>
+        <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZVALr-fT0-klCyHMKBeSsvG-egHSB1Nc&callback=initMap">
+        </script>-->
