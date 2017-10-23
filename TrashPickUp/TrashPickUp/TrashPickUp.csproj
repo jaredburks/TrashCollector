@@ -198,8 +198,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CustomerListController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\CustomersListController.cs" />
+    <Compile Include="Controllers\CustomersNewController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PickUpController.cs" />
@@ -256,6 +257,10 @@
     <Compile Include="Migrations\201710181910121_VacationDateRange.cs" />
     <Compile Include="Migrations\201710181910121_VacationDateRange.Designer.cs">
       <DependentUpon>201710181910121_VacationDateRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710230034231_AddedWallet.cs" />
+    <Compile Include="Migrations\201710230034231_AddedWallet.Designer.cs">
+      <DependentUpon>201710230034231_AddedWallet.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -337,11 +342,16 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Edit.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
-    <Content Include="Views\CustomerList\Create.cshtml" />
-    <Content Include="Views\CustomerList\Delete.cshtml" />
-    <Content Include="Views\CustomerList\Details.cshtml" />
-    <Content Include="Views\CustomerList\Edit.cshtml" />
-    <Content Include="Views\CustomerList\Index.cshtml" />
+    <Content Include="Views\CustomersNew\Create.cshtml" />
+    <Content Include="Views\CustomersNew\Delete.cshtml" />
+    <Content Include="Views\CustomersNew\Details.cshtml" />
+    <Content Include="Views\CustomersNew\Edit.cshtml" />
+    <Content Include="Views\CustomersNew\Index.cshtml" />
+    <Content Include="Views\CustomersList\Create.cshtml" />
+    <Content Include="Views\CustomersList\Delete.cshtml" />
+    <Content Include="Views\CustomersList\Details.cshtml" />
+    <Content Include="Views\CustomersList\Edit.cshtml" />
+    <Content Include="Views\CustomersList\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -392,6 +402,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710181910121_VacationDateRange.resx">
       <DependentUpon>201710181910121_VacationDateRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710230034231_AddedWallet.resx">
+      <DependentUpon>201710230034231_AddedWallet.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

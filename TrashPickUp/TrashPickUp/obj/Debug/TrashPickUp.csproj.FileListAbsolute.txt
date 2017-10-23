@@ -93,3 +93,4 @@ C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.update.resources
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.TestDayOfWeek.resources
 C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.VacationDateRange.resources
+C:\Users\Jared\Documents\Visual Studio 2015\Projects\TrashCollector\TrashPickUp\TrashPickUp\obj\Debug\TrashPickUp.Migrations.AddedWallet.resources
